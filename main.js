@@ -44,7 +44,6 @@
                 string: parsedSize + formatUnit(toUnit),
             };
         }
-        console.log(currentUnitIndex, toUnitIndex);
         if (currentUnitIndex < toUnitIndex) {
             parsedSize = parsedSize / Math.pow(unitBase || UNIT_BASE, absDiff);
         }
