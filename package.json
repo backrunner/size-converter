@@ -1,6 +1,6 @@
 {
   "name": "size-converter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Converter file size to other unit.",
   "main": "main.js",
   "scripts": {

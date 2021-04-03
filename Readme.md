@@ -19,11 +19,11 @@ IMPORTANT: In this tool, all the units in the parameter will be regard as "Byte"
 
 ### convertFileSize
 
-`convertFileSize: (fileSize: string, toUnit: string, unitBase?: number): ConvertSize`
+`convertFileSize: (fileSize: string, toUnit: string, unitBase?: number): ConvertedSize`
 
 The default `unitBase` is `1024`, you can set it to `1000` or sth else.
 
-## ConvertSize
+## ConvertedSize
 
 Including properties named `number` and `string`, number is the file size in `toUnit` without the unit itself, just a number.
 

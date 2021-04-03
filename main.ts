@@ -1,7 +1,7 @@
 const sizeUnits = ['bytes', 'kb', 'mb', 'gb', 'tb', 'pb', 'eb', 'zb', 'yb'];
 const UNIT_BASE = 1024;
 
-interface ConvertResult {
+interface ConvertedResult {
   number: number;
   string: string;
 }
@@ -10,7 +10,7 @@ const formatUnit = (unit: string): string => {
   return unit === 'bytes' ? 'Bytes' : unit.toUpperCase();
 };
 
-export const convertFileSize = (size: string, toUnit: string, unitBase?: number): ConvertResult => {
+export const convertFileSize = (size: string, toUnit: string, unitBase?: number): ConvertedResult => {
   let formattedSize: string = size.toLowerCase().trim();
   let parsedSize: number | null = null;
   let currentUnit: string;
